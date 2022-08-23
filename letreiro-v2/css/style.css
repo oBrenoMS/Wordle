@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(180deg, black, white);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    /* ll */
+    height: 67px;
+    border: 0.4px solid rgba(128, 128, 128, 0.25);
+    padding: 14px;
+}
+
+h1{
+    /* display: inline; */
+    display: block;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 7px;
+}
+.tabuleiro{
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 350px;
+    gap: 7px;
+    padding: 10px;
+    /* ll */
+    width: 90%;
+    align-items: center;
+    
+
+
+}
+
+.linha-tab{
+    display: flex;
+    width: 100%;
+    column-gap: 7px;
+    /* ll */
+
+}
+
+/* .linha-tab > */.quad{
+    width: 62px;
+    background-image: linear-gradient(to );
+    height: 62px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 62px;
+    border: 0.8px solid rgb(255 255 255);
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+}
+
+.teclado{
+    max-width: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    width: 97%;
+}
+
+.teclado .linha-tecla{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+
+    
+}
+
+.tecla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    min-width: 44px ;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.68em;
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid rgb(0 0 0);
+    cursor: pointer;
+}
+
+.tecla-del{
+    min-width: 50px;
+}
+
+.button-backspace{
+    object-fit:cover;
+    width: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+.insert-char-on{
+    border: 1.3px solid black;
+}
+
+
+
+
+/* PosClasse */
+.incorrect { 
+    background-color : #787c7e !important;
+}
+
+.correct{
+    background-color: #c9b458;
+    box-shadow: 1px 1px 6px 9px rgb(113 177 107 / 67%);
+    border: 3px solid #8dff8d;
+    
+}
+
+
+.fullcorrect{ 
+    background-color: #6aaa64;
+    box-shadow:-3px 1px 6px 3px rgb(113 177 107 / 67%); 
+    border: 3px solid #9cff9c;
+}
+
+
+.fullcorrect, .correct, .incorrect{
+    color: #fff;
+    border: none;
+}
+
